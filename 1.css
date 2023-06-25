@@ -1,0 +1,384 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav {
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(to right, #ffffff, #59e4a8);
+    position: fixed;
+    top: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+nav .logo {
+    font-size: 1.rem;
+    width: 30%;
+    left: -35px;
+    position: relative;
+    top: -18px;
+}
+
+nav .logo img {
+    padding-top: 20px;
+    width: 70px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(78, 71, 71);
+    font-family: Arial;
+    padding: 0px 10px;
+    font-weight: bold;
+    transition: 0.15s;
+}
+
+nav a:hover {
+    color: aliceblue;
+}
+
+#nav-button {
+    display: none;
+}
+
+label {
+    display: none;    
+}
+
+.contents {
+    min-height: 100vh;
+    background-color: #d0ff00;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.content-wrapper img {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 60px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+  }
+  
+
+.btn {
+    padding: 18px 34px;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    color: #000000;
+    background:linear-gradient(to right, #ffffff, #59e4a8);
+    border-color: #ec6964;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    line-height: 1.5;
+    border-radius: 0.25;
+}
+
+header img {
+    padding: 10px 0px;
+    box-sizing: border-box;
+    top: 60px;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+section img {
+    padding: 10px 0px;
+    box-sizing: border-box;
+    top: 60px;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}  
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 736px) and (orientation: portrait) {
+
+    nav {
+        align-items: center;
+    }
+
+    nav .logo {
+        width: 30%;
+        position: absolute;
+        left: 0px;
+    }
+
+    nav .logo img {
+        padding-top: 20px;    
+    }
+
+    nav ul {
+        position: fixed;
+        top: 44px;
+        width: 100%;
+        background: #cdf7e5;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav li {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+
+    nav a {
+        width: 100%;
+        display: block;
+    }
+
+    nav li:hover {
+        background: rgba(172, 255, 214, 0.452);
+    }
+
+    label {
+        display: block;
+        padding: 0px 10px;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 2%;
+    }
+
+    label:hover {
+        color: white;
+    }
+
+    nav #nav-button:checked~ul {
+        max-height: 100%;
+        transition: all 1s ease-out;
+    }
+
+}
+
+/*--Floating buttons*/
+body {
+    background: linear-gradient(90deg, #3575ff 0%, #f192bb 100%);
+}
+
+.btn-floating {
+    position: fixed;
+    right: 25px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 0;
+    z-index: 9999;
+    color: white;
+    transition: .2s;
+}
+
+.btn-floating:hover {
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.btn-floating span {
+    font-size: 16px;
+    margin-left: 5px;
+    transition: .2s;
+    line-height: 0px;
+    display: none;
+}
+
+.btn-floating:hover span {
+    display: inline-block;
+}
+
+.btn-floating:hover img {
+    margin-bottom: -3px;
+}
+
+.btn-floating.whatsapp {
+    bottom: 25px;
+    background-color: #34af23;
+    border: 2px solid #fff;
+}
+
+.btn-floating.whatsapp:hover {
+    background-color: #1f7a12;
+}
+
+.btn-floating.wa {
+    bottom: 85px;
+    background-color: #34af23;
+    border: 2px solid #fff;
+}
+
+.btn-floating.wa:hover {
+    background-color: #1f7a12;
+}
+
+/*--footer--*/
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-width: 100%;
+    margin: auto;
+    position: relative;
+    background-color: #f7f6f2;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
+}
+
+.content {
+    padding: 10px;
+    padding-bottom: 370px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-image: linear-gradient(#22577a, #38a3a5);
+    padding: 70px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #020202;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+
+}
+
+
